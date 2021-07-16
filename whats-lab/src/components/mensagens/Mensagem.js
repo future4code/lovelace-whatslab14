@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const MensagemContainer = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 5px;
 `
@@ -15,12 +16,13 @@ const MensagemCorpo = styled.div`
     border: 1px solid black;
 `
 const MensagemForm = styled.div`
+    background-color: green;
+    padding: 10px;
+    
     
 `
-/*const InputNome = styled.input`
-    width: 100%;
-    margin-right: 5px;
-`*/
+
+
 
 
 
