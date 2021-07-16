@@ -1,6 +1,16 @@
 import React from 'react'
 import styled from 'styled-components';
 
+const TopoSite = styled.div`
+    background-color: #3CB371;
+    display: flex;
+    justify-content: center;
+    font-family: fantasy;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+`
+
 const MensagemContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -13,14 +23,16 @@ const MensagemCorpo = styled.div`
     padding: 5px;
     height: 500px;
     width: 500px;
-    border: 1px solid black;
+    background-color: lightgrey;
 `
 const MensagemForm = styled.div`
-    background-color: green;
+    background-color: #3CB371;
     padding: 10px;
-    
-    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+       
 `
+
 
 
 
@@ -67,6 +79,12 @@ class Mensagem extends React.Component {
         })
 
         return <MensagemContainer>
+
+            <TopoSite>
+            <p>WhatsLab</p>
+            </TopoSite>
+
+
             <MensagemCorpo>
                 
                 {mensagens}
